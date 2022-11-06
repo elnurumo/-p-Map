@@ -18,6 +18,7 @@ html {
 
 .ip_addres_tracker {
     display: flex;
+    position: relative;
     /* justify-content: center; */
     align-items: center;
     flex-direction: column;
@@ -67,9 +68,9 @@ img {
     /* margin: 3.5rem 0; */
     border-radius: 1rem;
     /* max-width: 95rem; */
-    transform: translateY(50%);
+    /* transform: translateY(50%); */
     padding: 3.5rem 0;
-    bottom: 0;
+    bottom: -8rem;
     z-index: 100;
 }
 
@@ -106,4 +107,114 @@ img {
 #map {
     height: 60vh;
     z-index: 0;
+}
+
+
+
+@media (max-width: 576px) {
+    .ip_address_tracker_area {
+        max-width: 144rem;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .ip_addres_tracker {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        flex-direction: column;
+        height: 40vh;
+        background-image: url("../images/pattern-bg.png");
+        /* background-repeat: no-repeat; */
+    }
+
+    .ip_address_tracker_name {
+        color: white;
+        padding: 2rem;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+
+    .ip_address_search_input {
+        padding: 1.1rem 1.5rem;
+        width: 24rem;
+        border-radius: 1rem 0 0 1rem;
+        border: solid white 1px;
+    }
+
+    .ip_address_search_button {
+        width: 4rem;
+        height: 4rem;
+        background-color: black;
+        border: 0;
+        border-radius: 0 1rem 1rem 0;
+        cursor: pointer;
+    }
+
+    form {
+        display: flex;
+    }
+
+    img {
+        width: 0.8rem;
+    }
+
+    /* MAP ABOUT AREA*/
+
+    .map_abouts {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        list-style-type: none;
+        background-color: white;
+        /* margin: 3.5rem 0; */
+        border-radius: 1rem;
+        /* max-width: 95rem; */
+        /* transform: translateY(50%); */
+        padding: 2.5rem 0;
+        bottom: -19rem;
+        z-index: 100;
+        gap: 2rem;
+    }
+
+    .map_about {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* padding: 2rem; */
+        width: calc(95rem/4);
+        border-right: 1.3px solid lightgray;
+        padding: 0 2.5rem 0 2.5rem;
+        /* width: max-content; */
+    }
+
+    .map_about:nth-child(4) {
+        border-right: 0;
+    }
+
+    .map_about_name {
+        color: gray;
+        font-size: 1rem;
+        transform: translateY(-50%);
+        letter-spacing: 1px;
+    }
+
+    .map_about_main {
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 0;
+        transform: translateY(10%);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    #map {
+        height: 60vh;
+        z-index: 0;
+    }
 }
