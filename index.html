@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin="" />
+  <title>Frontend Mentor | IP Address Tracker</title>
+</head>
+
+<body>
+  <section class="ip_address_tracker_area">
+    <div class="ip_addres_tracker">
+      <h1 class="ip_address_tracker_name">
+        IP Address Tracker
+      </h1>
+      <form action="">
+        <input placeholder="Search for any IP address or domain" type="text" class="ip_address_search_input">
+        <button class="ip_address_search_button">
+          <img src="./images/icon-arrow.svg" alt="icon-arrow">
+        </button>
+      </form>
+      <ul class="map_abouts">
+        <li class="map_about">
+          <span class="map_about_name">IP ADDRESS</span>
+          <span class="map_about_main ip_address">103.119.111.0</span>
+        </li>
+        <li class="map_about">
+          <span class="map_about_name">LOCATION</span>
+          <span class="map_about_main location">AZ, Baku City, Baku,</span>
+        </li>
+        <li class="map_about">
+          <span class="map_about_name">TIMEZONE</span>
+          <span class="map_about_main timezone">UTC +04:00</span>
+        </li>
+        <li class="map_about">
+          <span class="map_about_name">ISP</span>
+          <span class="map_about_main isp">Host Universal Pty Ltd</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="map_area">
+    <div id="map"></div>
+  </section>
+
+
+
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
