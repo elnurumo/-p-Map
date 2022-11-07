@@ -140,7 +140,7 @@ img {
 
     .ip_address_search_input {
         padding: 1.1rem 1.5rem;
-        width: 24rem;
+        width: 25rem;
         border-radius: 1rem 0 0 1rem;
         border: solid white 1px;
     }
@@ -178,7 +178,7 @@ img {
         /* max-width: 95rem; */
         /* transform: translateY(50%); */
         padding: 2.5rem 0;
-        bottom: -19rem;
+        bottom: -11.5rem;
         z-index: 100;
         gap: 2rem;
     }
@@ -189,8 +189,9 @@ img {
         justify-content: flex-start;
         /* padding: 2rem; */
         width: calc(95rem/4);
+        /* width: 20rem; */
         border-right: 1.3px solid lightgray;
-        padding: 0 2.5rem 0 2.5rem;
+        padding: 0;
         /* width: max-content; */
     }
 
@@ -200,13 +201,13 @@ img {
 
     .map_about_name {
         color: gray;
-        font-size: 1rem;
+        font-size: 0.8rem;
         transform: translateY(-50%);
         letter-spacing: 1px;
     }
 
     .map_about_main {
-        font-size: 2rem;
+        font-size: 1.2rem;
         font-weight: bold;
         padding: 0;
         transform: translateY(10%);
